@@ -1,9 +1,9 @@
-class ViajeroFrecuente:
+class ViajeroFrecuente():
     __numero = 0
     __DNI = 0
     __nombre = ""
     __apellido = ""
-    __millasacum = 0
+    __millasacum = 0.0
     def __init__(self,numero,DNI,nombre,apellido,millasacum):
         self.__numero = int(numero)
         self.__DNI = int(DNI)
@@ -11,10 +11,10 @@ class ViajeroFrecuente:
         self.__apellido = str (apellido)
         self.__millasacum = float (millasacum)
     def cantidadTotaldeMillas (self) :
-        print( self.__millasacum)
+        return( self.__millasacum)
     def acumularMillas (self , millas) :
         self.__millasacum = (millas+self.__millasacum)
-        print (self.__millasacum)
+        return (self.__millasacum)
     def canjearMillas (self , cant_a_canj):
         if cant_a_canj <= self.__millasacum:
             return self.__millasacum - cant_a_canj
@@ -23,6 +23,5 @@ class ViajeroFrecuente:
     def getnumber (self):
         return self.__numero
     def mostrar (self):
-        print("Nombre:", self.__nombre)
-        print("Apellido:", self.__apellido)
+        return(self.__nombre, self.__apellido)
 
