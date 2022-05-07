@@ -2,6 +2,7 @@ from Menu import menu
 
 if __name__ == '__main__':
 	unmenu=menu()
+	unmenu.inicializar()
 	Po = int(input("Ingrese el numero del viajero\n"))
 	while (Po > 4 or Po < 1):
 		print("Error Numero no valido\n")

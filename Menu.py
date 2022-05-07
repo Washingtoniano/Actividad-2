@@ -3,8 +3,9 @@ class menu:
     __li=lista()
     def __init__(self):
         self.__li=lista()
-    def manejador(self,Po,op):
+    def inicializar (self):
         self.__li.agregar()
+    def manejador(self,Po,op):
         o=self.__li.consultar(Po)
         if (op)==1:
             self.opcion1(o)
