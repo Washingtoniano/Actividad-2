@@ -22,6 +22,6 @@ class ViajeroFrecuente():
             print ("Error")
     def getnumber (self):
         return self.__numero
-    def mostrar (self):
-        return(self.__nombre, self.__apellido)
 
+    def __str__(self):
+        return ("Numero:{}--DNI:{}--Nombre:{}--Apellido:{}--Millas:{}".format(self.__numero,self.__DNI,self.__nombre,self.__apellido,self.__millasacum))

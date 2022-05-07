@@ -35,5 +35,5 @@ class lista():
 	def canjear (self,o,c):
 		return(self.__indice[o].canjearMillas(c))
 	def mostrar (self,o):
-		return self.__indice[o].mostrar
+		print( self.__indice[o])
 
